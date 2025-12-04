@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Tail Haven – Available Pets</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- arimo font -->
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+<header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Home Tail Haven logo">
+            </a>
+
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="available-pets.html">Available Pets</a>
+                <a class="nav-link" href="adoption-process.html">Adoption</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="main-content">
+
+    <!-- top line -->
+    <section class="pets-hero">
+        <div class="container">
+            <h1>A second home for every tail.</h1>
+        </div>
+    </section>
+
+    <!-- heading + sort -->
+    <section class="available-header">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+                <h2 class="page-title mb-3 mb-md-0">Available Pets</h2>
+
+                <form class="sort-form d-flex align-items-center" aria-label="Sort available pets">
+                    <label for="sort-pets" class="me-2 sort-label">Sort by:</label>
+                    <select id="sort-pets" name="sort-pets" class="form-select">
+                        <option value="name">Name (A–Z)</option>
+                        <option value="age">Age (youngest first)</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured pet -->
+    <section class="featured-pet-section pb-5">
+        <div class="container">
+            <div class="featured-pet row g-4 align-items-center">
+                <div class="col-12 col-md-5">
+                    <picture>
+                        <source srcset="img/buddy-800.jpg" media="(min-width: 768px)">
+                        <img src="img/buddy-400.jpg" alt="Buddy the dog" class="img-fluid">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-7">
+                    <p class="featured-label">Featured Pet of the Week!</p>
+                    <h2 class="featured-name">Meet Buddy</h2>
+                    <p class="featured-text">
+                        Buddy is a playful, loving pup looking for his forever home. He loves walks,
+                        belly rubs, and spending time with his favourite humans.
+                    </p>
+                    <a href="adoption-process.html#adoption-steps" class="btn btn-success">Adopt Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pets grid -->
+    <section class="available-grid pb-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Current Friends</h2>
+
+            <div class="row g-4 text-center">
+
+                <div class="col-12 col-md-4">
+                    <div class="pet-card">
+                        <img class="img-fluid mb-3" src="img/bella-400.jpg" alt="Bella the cat">
+                        <h3>BELLA</h3>
+                        <p class="pet-desc">A calm, cuddly cat who loves sunny spots and gentle company.</p>
+                        <a class="btn btn-success" href="adoption-process.html#adoption-steps">Adopt Me</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="pet-card">
+                        <img class="img-fluid mb-3" src="img/luna-400.jpg" alt="Luna the dog">
+                        <h3>LUNA</h3>
+                        <p class="pet-desc">A happy, energetic dog who enjoys playtime and outdoor adventures.</p>
+                        <a class="btn btn-success" href="adoption-process.html#adoption-steps">Adopt Me</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="pet-card">
+                        <img class="img-fluid mb-3" src="img/melo-400.jpg" alt="Melo the cat">
+                        <h3>MELO</h3>
+                        <p class="pet-desc">An independent cat who still loves treats and quiet cuddles.</p>
+                        <a class="btn btn-success" href="adoption-process.html#adoption-steps">Adopt Me</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- footer -->
+<footer class="home-footer">
+    <div class="container">
+
+        <div class="row align-items-center footer-main">
+
+            <div class="col-12 col-md-4 footer-image">
+                <img src="img/decor-bottom-600.jpg" alt="Dog and cat">
+            </div>
+
+            <div class="col-12 col-md-8 footer-text">
+                <p class="footer-title">Want to help more tails?</p>
+
+                <p class="footer-actions">
+                    <a href="#" class="footer-link">Volunteer</a> •
+                    <a href="#" class="footer-link">Donate</a> •
+                    <a href="#" class="footer-link">Support</a>
+                </p>
+
+                <p class="footer-contact">
+                    <a href="mailto:info@hometailhaven.com" class="footer-link">
+                        Contact: info@hometailhaven.com
+                    </a>
+                </p>
+
+                <p class="footer-label">Our SOCIALS</p>
+
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="img/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img src="img/youtube.svg" alt="YouTube">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="img/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+                        <img src="img/tiktok.svg" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Home Tail Haven
+    </div>
+</footer>
+
+</body>
+</html>
